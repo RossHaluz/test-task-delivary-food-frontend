@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FilterBtnWrapper, FilterBtn } from './Filter.styled';
 
 const Filter = ({ setCurrentCategory }) => {
-  const [categories, setCategories] = useState([
+  const [categories] = useState([
     {
       id: 1,
       name: 'Kegler',
