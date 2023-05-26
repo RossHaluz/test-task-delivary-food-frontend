@@ -44,6 +44,7 @@ export const BtnDeleteOrder = styled.button`
   border: none;
   cursor: pointer;
   font-size: 18px;
+  color: #030303;
 
   :hover,
   :focus {
