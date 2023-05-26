@@ -14,7 +14,7 @@ import {
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { deleteItemInCart } from 'redux/orders/slice';
 import { NavLink } from 'react-router-dom';
-import Count from 'components/Count';
+// import Count from 'components/Count';
 
 const Cart = () => {
   const dispatch = useDispatch();
