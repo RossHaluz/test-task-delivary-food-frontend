@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { BiLeftArrowCircle, BiRightArrowCircle } from 'react-icons/bi'; 
+import { BtnCount, CountWrrapper } from './Count.styled';
 
-const Count = ({amount}) => {
+const Count = ({amount, setTotalPrice, price}) => {
   const [count, setCount] = useState(amount);
 
   const increment = () => {
     setCount(prev => prev + 1)
+setTotalPrice(amount * price)
   }
 
   const decrement = () => {
@@ -13,18 +15,20 @@ const Count = ({amount}) => {
       return
     }
     setCount(prev => prev - 1)
+    const totalPrice = amount * price;
+    setTotalPrice(totalPrice)
   }
 
   return (
-    <div>
-      <button type="button" onClick={decrement}>
+    <CountWrrapper>
+      <BtnCount type="button" onClick={decrement}>
         <BiLeftArrowCircle />
-      </button>
+      </BtnCount>
       <span>{count}</span>
-      <button type="button" onClick={increment}>
+      <BtnCount type="button" onClick={increment}>
         <BiRightArrowCircle />
-      </button>
-    </div>
+      </BtnCount>
+    </CountWrrapper>
   );
 };
 

@@ -45,5 +45,5 @@ const orderSlice = createSlice({
   },
 });
 
-export const { addItemToCart, deleteItemInCart } = orderSlice.actions;
+export const { addItemToCart, deleteItemInCart, countTotalPrice } = orderSlice.actions;
 export const orderReduser = orderSlice.reducer;

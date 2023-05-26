@@ -50,3 +50,9 @@ export const BtnDeleteOrder = styled.button`
     transform: scale(1.2);
   }
 `;
+
+
+export const TotalPrice = styled.h3`
+      margin-left: auto;
+    margin-top: 35px;
+`
