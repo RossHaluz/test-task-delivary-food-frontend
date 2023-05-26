@@ -4,6 +4,7 @@ import { addItemToCart } from 'redux/orders/slice';
 
 const ProductItem = ({ title, img, desc, price, id }) => {
   const dispatch = useDispatch();
+let amount = 1
 
   return (
     <FoodItem>
@@ -15,7 +16,7 @@ const ProductItem = ({ title, img, desc, price, id }) => {
       <p>{price}</p>
       <FoodItemBtn
         type="button"
-        onClick={() => dispatch(addItemToCart({ title, img, desc, price, id }))}
+        onClick={() => dispatch(addItemToCart({ title, img, desc, price, id, amount }))}
       >
         Купити
       </FoodItemBtn>

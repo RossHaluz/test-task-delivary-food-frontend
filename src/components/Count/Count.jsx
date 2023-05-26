@@ -1,12 +1,13 @@
 import { BiLeftArrowCircle, BiRightArrowCircle } from 'react-icons/bi';
 
-const Count = () => {
+const Count = ({amount}) => {
+
   return (
     <div>
       <button type="button">
         <BiLeftArrowCircle />
       </button>
-      <span>0</span>
+      <span>{amount}</span>
       <button type="button">
         <BiRightArrowCircle />
       </button>
