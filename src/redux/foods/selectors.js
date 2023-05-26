@@ -1,1 +1,1 @@
-export const selectFoods = state => state.food.foods;
+export const selectFoods = state => state.food.foods || [];

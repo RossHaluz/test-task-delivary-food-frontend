@@ -14,6 +14,7 @@ import {
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { deleteItemInCart } from 'redux/orders/slice';
 import { NavLink } from 'react-router-dom';
+import Count from 'components/Count';
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const Cart = () => {
                     <CartOrderDesc>
                       <h3>{title}</h3>
                       <p>{desc}</p>
+                      {/* <Count /> */}
                     </CartOrderDesc>
                     <BtnDeleteOrder
                       type="button"
