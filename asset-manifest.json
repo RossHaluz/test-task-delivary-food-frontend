@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css",
-    "main.js": "/test-task-delivary-food-frontend/static/js/main.fcff11a7.js",
-    "static/js/517.82e8c0f9.chunk.js": "/test-task-delivary-food-frontend/static/js/517.82e8c0f9.chunk.js",
-    "static/js/119.b4456af5.chunk.js": "/test-task-delivary-food-frontend/static/js/119.b4456af5.chunk.js",
-    "static/js/568.a6a25737.chunk.js": "/test-task-delivary-food-frontend/static/js/568.a6a25737.chunk.js",
+    "main.js": "/test-task-delivary-food-frontend/static/js/main.2df377c4.js",
+    "static/js/517.fbe97cc4.chunk.js": "/test-task-delivary-food-frontend/static/js/517.fbe97cc4.chunk.js",
+    "static/js/301.abf65f71.chunk.js": "/test-task-delivary-food-frontend/static/js/301.abf65f71.chunk.js",
+    "static/js/239.e4e3e858.chunk.js": "/test-task-delivary-food-frontend/static/js/239.e4e3e858.chunk.js",
     "index.html": "/test-task-delivary-food-frontend/index.html",
     "main.0abed4b1.css.map": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css.map",
-    "main.fcff11a7.js.map": "/test-task-delivary-food-frontend/static/js/main.fcff11a7.js.map",
-    "517.82e8c0f9.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.82e8c0f9.chunk.js.map",
-    "119.b4456af5.chunk.js.map": "/test-task-delivary-food-frontend/static/js/119.b4456af5.chunk.js.map",
-    "568.a6a25737.chunk.js.map": "/test-task-delivary-food-frontend/static/js/568.a6a25737.chunk.js.map"
+    "main.2df377c4.js.map": "/test-task-delivary-food-frontend/static/js/main.2df377c4.js.map",
+    "517.fbe97cc4.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.fbe97cc4.chunk.js.map",
+    "301.abf65f71.chunk.js.map": "/test-task-delivary-food-frontend/static/js/301.abf65f71.chunk.js.map",
+    "239.e4e3e858.chunk.js.map": "/test-task-delivary-food-frontend/static/js/239.e4e3e858.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0abed4b1.css",
-    "static/js/main.fcff11a7.js"
+    "static/js/main.2df377c4.js"
   ]
 }
