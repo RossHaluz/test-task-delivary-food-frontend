@@ -35,8 +35,8 @@ const orderSlice = createSlice({
             }
             : item
           ),
-          totalPrice: state.totalPrice + payload.price,
-          amountPrice: payload.amount * payload.price
+          amountPrice: payload.amount * payload.price,
+          totalPrice: state.totalPrice + state.amountPrice
         };
       }
     
