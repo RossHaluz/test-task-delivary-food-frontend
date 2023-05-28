@@ -5,7 +5,6 @@ const Navigation = () => {
   return (
     <MainNavigation>
       <MainNavigationLink to="/">Catalog</MainNavigationLink>
-      <MainNavigationLink to="cart">Cart</MainNavigationLink>
     </MainNavigation>
   );
 };

@@ -16,7 +16,7 @@ import storage from 'redux-persist/lib/storage';
 const persistConfig = {
   key: 'orders',
   storage,
-  whitelist: 'orderItems',
+  whitelist: ['orderItems', 'totalPrice'],
 };
 
 export const store = configureStore({
