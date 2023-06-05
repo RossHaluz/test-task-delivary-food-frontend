@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css",
-    "main.js": "/test-task-delivary-food-frontend/static/js/main.3ccbe532.js",
-    "static/js/517.75382448.chunk.js": "/test-task-delivary-food-frontend/static/js/517.75382448.chunk.js",
-    "static/js/755.a15a8206.chunk.js": "/test-task-delivary-food-frontend/static/js/755.a15a8206.chunk.js",
+    "main.js": "/test-task-delivary-food-frontend/static/js/main.bdb4158c.js",
+    "static/js/517.743eb023.chunk.js": "/test-task-delivary-food-frontend/static/js/517.743eb023.chunk.js",
+    "static/js/755.86dc5a2f.chunk.js": "/test-task-delivary-food-frontend/static/js/755.86dc5a2f.chunk.js",
     "static/js/213.7ca1f6ce.chunk.js": "/test-task-delivary-food-frontend/static/js/213.7ca1f6ce.chunk.js",
     "static/js/164.38c1966e.chunk.js": "/test-task-delivary-food-frontend/static/js/164.38c1966e.chunk.js",
     "static/js/966.bb780a99.chunk.js": "/test-task-delivary-food-frontend/static/js/966.bb780a99.chunk.js",
     "index.html": "/test-task-delivary-food-frontend/index.html",
     "main.0abed4b1.css.map": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css.map",
-    "main.3ccbe532.js.map": "/test-task-delivary-food-frontend/static/js/main.3ccbe532.js.map",
-    "517.75382448.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.75382448.chunk.js.map",
-    "755.a15a8206.chunk.js.map": "/test-task-delivary-food-frontend/static/js/755.a15a8206.chunk.js.map",
+    "main.bdb4158c.js.map": "/test-task-delivary-food-frontend/static/js/main.bdb4158c.js.map",
+    "517.743eb023.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.743eb023.chunk.js.map",
+    "755.86dc5a2f.chunk.js.map": "/test-task-delivary-food-frontend/static/js/755.86dc5a2f.chunk.js.map",
     "213.7ca1f6ce.chunk.js.map": "/test-task-delivary-food-frontend/static/js/213.7ca1f6ce.chunk.js.map",
     "164.38c1966e.chunk.js.map": "/test-task-delivary-food-frontend/static/js/164.38c1966e.chunk.js.map",
     "966.bb780a99.chunk.js.map": "/test-task-delivary-food-frontend/static/js/966.bb780a99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0abed4b1.css",
-    "static/js/main.3ccbe532.js"
+    "static/js/main.bdb4158c.js"
   ]
 }
