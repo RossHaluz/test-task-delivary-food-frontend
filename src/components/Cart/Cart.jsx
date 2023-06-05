@@ -13,7 +13,7 @@ import {
   CartOrderItem,
   CartOrderDesc,
   CartOrderDescContainer,
-  // OrderDesc,
+  OrderDesc,
   CartOrderDescWrrapper,
   BtnDeleteOrder,
   TotalPrice,
@@ -67,9 +67,9 @@ const Cart = () => {
                           <RiDeleteBin6Line />
                         </BtnDeleteOrder>
                       </CartOrderDescWrrapper>
-                      {/* <OrderDesc>
-                        <strong>Price:</strong> {amountItemPrice}
-                      </OrderDesc> */}
+                      <OrderDesc>
+                        <strong>Price:</strong> {price * count}
+                      </OrderDesc>
                     </CartOrderDescContainer>
                   </CartOrderItem>
                 );
