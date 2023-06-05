@@ -4,7 +4,7 @@ import Filter from '../Filter/Filter';
 import { useSelector } from 'react-redux';
 import { isLoading, selectFoods } from 'redux/foods/selectors';
 import { useState } from 'react';
-import { Oval } from  'react-loader-spinner'
+import { Oval } from 'react-loader-spinner';
 
 const Products = () => {
   const items = useSelector(selectFoods);
@@ -19,21 +19,23 @@ const Products = () => {
     <FoodListContainer>
       <Filter setCurrentCategory={setCurrentCategory} />
       <FoodsList>
-        {isLoadingPage ? <Oval
-  height={80}
-  width={80}
-  color="#2196f3"
-  wrapperStyle={{}}
-  wrapperClass=""
-  visible={true}
-  ariaLabel='oval-loading'
-  secondaryColor="#2196f3"
-  strokeWidth={2}
-  strokeWidthSecondary={2}
-
-/> : items
+        {isLoadingPage ? (
+          <Oval
+            height={80}
+            width={80}
+            color="#2196f3"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+            ariaLabel="oval-loading"
+            secondaryColor="#2196f3"
+            strokeWidth={2}
+            strokeWidthSecondary={2}
+          />
+        ) : (
+          items
             .filter(item => item.name === current)
-            .map(({ title, img, desc, price, _id }) => {
+            .map(({ title, img, desc, price, _id, count }) => {
               return (
                 <ProductItem
                   key={_id}
@@ -42,9 +44,11 @@ const Products = () => {
                   img={img}
                   desc={desc}
                   price={price}
+                  count={count}
                 />
               );
-            })}
+            })
+        )}
       </FoodsList>
     </FoodListContainer>
   );

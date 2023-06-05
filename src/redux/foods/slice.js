@@ -9,10 +9,11 @@ const foodsSlice = createSlice({
     isLoading: false,
   },
   extraReducers: {
-    [getFoods.pending](state, action) {
+    [getFoods.pending](state, __) {
       state.isLoading = true;
     },
     [getFoods.fulfilled](state, action) {
+      console.log(action);
       state.isLoading = false;
       state.foods = action.payload;
     },
