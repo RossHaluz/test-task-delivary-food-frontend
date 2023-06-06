@@ -5,7 +5,6 @@ const initialState = {
   orderItems: [],
   totalPrice: 0,
   totalQuantity: 0,
-  amountItemPrice: 0,
   successOrder: false,
 };
 

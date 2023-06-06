@@ -19,9 +19,9 @@ const ProductItem = ({ title, img, desc, price, id, count }) => {
           <h2>{title}</h2>
           <FoodItemDesc>{desc}</FoodItemDesc>
         </div>
-        <p>{price}</p>
+        <p>{price} UAH</p>
         <FoodItemBtn type="button" onClick={handleAddItemToCart}>
-          Купити
+          Buy
         </FoodItemBtn>
       </FoodItem>
     </>

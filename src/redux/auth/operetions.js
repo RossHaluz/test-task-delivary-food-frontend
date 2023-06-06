@@ -1,0 +1,53 @@
+import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
+axios.defaults.baseURL = 'https://fooddelivery-y6s0.onrender.com';
+
+const setAuthHeaderToken = token => {
+  axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+};
+
+export const register = createAsyncThunk(
+  'auth/register',
+  async (userData, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.post('/auth/register', userData);
+      setAuthHeaderToken(data.token);
+      return data;
+    } catch (error) {
+      rejectWithValue(error.message);
+    }
+  }
+);
+
+export const login = createAsyncThunk(
+  'auth/login',
+  async (userData, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.post('/auth/login', userData);
+      console.log(data);
+      setAuthHeaderToken(data.token);
+      return data;
+    } catch (error) {
+      rejectWithValue(error.message);
+    }
+  }
+);
+
+export const currentUser = createAsyncThunk(
+  'auth/current',
+  async (__, { rejectWithValue, getState }) => {
+    const state = getState();
+    const token = state.auth.token;
+    if (!token) {
+      return rejectWithValue();
+    }
+    setAuthHeaderToken(token);
+    try {
+      const { data } = await axios.get('/auth/current');
+      return data;
+    } catch (error) {
+      rejectWithValue(error.message);
+    }
+  }
+);
