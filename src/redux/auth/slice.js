@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { register, login, currentUser } from './operetions';
+import { register, login, currentUser, logout } from './operetions';
 
 const initialState = {
-  user: { name: null, password: null, email: null },
-  token: '',
+  user: { name: null, email: null },
+  token: null,
   isLoading: false,
   isLoging: false,
   isRefreshing: false,
@@ -42,6 +42,13 @@ const authSlice = createSlice({
       state.isRefreshing = true;
     },
     [currentUser.rejected](state, __) {
+      state.isLoging = false;
+      state.isRefreshing = false;
+    },
+    [logout.fulfilled](state, __) {
+      state.user = { name: null, email: null };
+      state.token = null;
+      state.isLoading = false;
       state.isLoging = false;
       state.isRefreshing = false;
     },
