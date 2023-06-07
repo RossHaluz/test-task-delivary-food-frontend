@@ -1,31 +1,31 @@
 {
   "files": {
     "main.css": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css",
-    "main.js": "/test-task-delivary-food-frontend/static/js/main.2314a46b.js",
+    "main.js": "/test-task-delivary-food-frontend/static/js/main.4a508a86.js",
     "static/js/517.5991ffa1.chunk.js": "/test-task-delivary-food-frontend/static/js/517.5991ffa1.chunk.js",
     "static/js/755.0ea32e15.chunk.js": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js",
     "static/js/213.82d5f84b.chunk.js": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js",
     "static/js/476.4cc73c00.chunk.js": "/test-task-delivary-food-frontend/static/js/476.4cc73c00.chunk.js",
     "static/js/96.b64782ac.chunk.js": "/test-task-delivary-food-frontend/static/js/96.b64782ac.chunk.js",
     "static/js/568.b3eba832.chunk.js": "/test-task-delivary-food-frontend/static/js/568.b3eba832.chunk.js",
-    "static/js/195.b6bf2418.chunk.js": "/test-task-delivary-food-frontend/static/js/195.b6bf2418.chunk.js",
+    "static/js/705.bb088423.chunk.js": "/test-task-delivary-food-frontend/static/js/705.bb088423.chunk.js",
     "static/js/966.bb780a99.chunk.js": "/test-task-delivary-food-frontend/static/js/966.bb780a99.chunk.js",
     "static/js/692.0b43e31e.chunk.js": "/test-task-delivary-food-frontend/static/js/692.0b43e31e.chunk.js",
     "index.html": "/test-task-delivary-food-frontend/index.html",
     "main.0abed4b1.css.map": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css.map",
-    "main.2314a46b.js.map": "/test-task-delivary-food-frontend/static/js/main.2314a46b.js.map",
+    "main.4a508a86.js.map": "/test-task-delivary-food-frontend/static/js/main.4a508a86.js.map",
     "517.5991ffa1.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.5991ffa1.chunk.js.map",
     "755.0ea32e15.chunk.js.map": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js.map",
     "213.82d5f84b.chunk.js.map": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js.map",
     "476.4cc73c00.chunk.js.map": "/test-task-delivary-food-frontend/static/js/476.4cc73c00.chunk.js.map",
     "96.b64782ac.chunk.js.map": "/test-task-delivary-food-frontend/static/js/96.b64782ac.chunk.js.map",
     "568.b3eba832.chunk.js.map": "/test-task-delivary-food-frontend/static/js/568.b3eba832.chunk.js.map",
-    "195.b6bf2418.chunk.js.map": "/test-task-delivary-food-frontend/static/js/195.b6bf2418.chunk.js.map",
+    "705.bb088423.chunk.js.map": "/test-task-delivary-food-frontend/static/js/705.bb088423.chunk.js.map",
     "966.bb780a99.chunk.js.map": "/test-task-delivary-food-frontend/static/js/966.bb780a99.chunk.js.map",
     "692.0b43e31e.chunk.js.map": "/test-task-delivary-food-frontend/static/js/692.0b43e31e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0abed4b1.css",
-    "static/js/main.2314a46b.js"
+    "static/js/main.4a508a86.js"
   ]
 }
