@@ -6,7 +6,10 @@ import { getFoods } from 'redux/foods/operetions';
 import { useDispatch } from 'react-redux';
 import { currentUser } from 'redux/auth/operetions';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
-import RestrictedRoute from 'components/RestrictedRoute/RestrictedRoute';
+import {
+  RestrictedRoute,
+  RestrictRouteSuccessOrder,
+} from 'components/RestrictedRoute/RestrictedRoute';
 
 const ProductsPage = lazy(() => import('../src/pages/ProductsPage'));
 const CartPage = lazy(() => import('../src/pages/CartPage'));
@@ -28,7 +31,15 @@ function App() {
       <Route path="/" element={<SharedLoyout />}>
         <Route index element={<ProductsPage />} />
         <Route path="cart" element={<CartPage />} />
-        <Route path="success-order" element={<SuccessOrderPage />} />
+        <Route
+          path="success-order"
+          element={
+            <RestrictRouteSuccessOrder
+              component={<SuccessOrderPage />}
+              redirectTo="/"
+            />
+          }
+        />
         <Route
           path="register"
           element={
