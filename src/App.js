@@ -11,6 +11,7 @@ const CartPage = lazy(() => import('../src/pages/CartPage'));
 const SuccessOrderPage = lazy(() => import('../src/pages/SuccessOrderPage'));
 const RegisterPage = lazy(() => import('../src/pages/RegisterPage'));
 const LoginPage = lazy(() => import('../src/pages/LoginPage'));
+const UserPage = lazy(() => import('../src/pages/UserPage'));
 
 function App() {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function App() {
         <Route path="success-order" element={<SuccessOrderPage />} />
         <Route path="register" element={<RegisterPage />} />
         <Route path="login" element={<LoginPage />} />
+        <Route path="user" element={<UserPage />} />
       </Route>
     </Routes>
   );
