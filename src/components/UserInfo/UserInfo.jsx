@@ -1,5 +1,5 @@
 import ModalEditUserInfo from 'components/ModalEditUserInfo';
-import { Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from 'redux/auth/selectors';
@@ -8,6 +8,8 @@ import {
   UserInfoLable,
   UserInfoWrapperr,
   UserInfoTitle,
+  UserInfoField,
+  UserInfoBtn,
 } from './UserInfo.styled';
 
 const UserInfo = () => {
@@ -19,8 +21,8 @@ const UserInfo = () => {
   };
 
   const initialValues = {
-    name: user.name || '',
-    email: user.email || '',
+    name: user.name,
+    email: user.email,
   };
 
   return (
@@ -31,15 +33,15 @@ const UserInfo = () => {
           <UserInfoForm>
             <UserInfoLable>
               Name
-              <Field type="text" name="name" disabled />
+              <UserInfoField type="text" name="name" disabled />
             </UserInfoLable>
             <UserInfoLable>
               Email
-              <Field type="email" name="email" disabled />
+              <UserInfoField type="email" name="email" disabled />
             </UserInfoLable>
-            <button type="button" onClick={handleIsOpen}>
+            <UserInfoBtn type="button" onClick={handleIsOpen}>
               Edit profile
-            </button>
+            </UserInfoBtn>
           </UserInfoForm>
         </Formik>
         {isOpen && <ModalEditUserInfo setIsOpen={setIsOpen} />}

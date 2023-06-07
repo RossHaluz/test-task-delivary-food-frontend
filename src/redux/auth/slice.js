@@ -24,7 +24,7 @@ const authSlice = createSlice({
       state.isRefreshing = true;
     },
     [login.pending](state, __) {
-      state.isLoging = true;
+      state.isLoading = true;
     },
     [login.fulfilled](state, action) {
       state.isLoading = false;

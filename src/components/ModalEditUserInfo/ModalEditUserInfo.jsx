@@ -1,6 +1,13 @@
 import React from 'react';
-import { Backdrop, Modal } from './ModalEditUserInfo.styled';
-import { Field, Form, Formik } from 'formik';
+import {
+  Backdrop,
+  Modal,
+  ModalTitle,
+  ModalEditForm,
+  ModalEditField,
+  ModalEditBtn,
+} from './ModalEditUserInfo.styled';
+import { Formik } from 'formik';
 import { selectUser } from 'redux/auth/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { editUser } from 'redux/auth/operetions';
@@ -23,18 +30,19 @@ const ModalEditUserInfo = ({ setIsOpen }) => {
   return (
     <Backdrop onClick={onCloseEditModal}>
       <Modal>
+        <ModalTitle>Edit profile</ModalTitle>
         <Formik
           initialValues={initialValues}
           onSubmit={value => {
-            dispatch(editUser(value));
             setIsOpen(false);
+            dispatch(editUser(value));
           }}
         >
-          <Form>
-            <Field type="text" name="name" />
-            <Field type="email" name="email" />
-            <button type="submit">Edit</button>
-          </Form>
+          <ModalEditForm>
+            <ModalEditField type="text" name="name" />
+            <ModalEditField type="email" name="email" />
+            <ModalEditBtn type="submit">Edit</ModalEditBtn>
+          </ModalEditForm>
         </Formik>
       </Modal>
     </Backdrop>
