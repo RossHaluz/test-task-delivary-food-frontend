@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css",
-    "main.js": "/test-task-delivary-food-frontend/static/js/main.9e68cedb.js",
+    "main.js": "/test-task-delivary-food-frontend/static/js/main.cdc439e6.js",
     "static/js/517.5991ffa1.chunk.js": "/test-task-delivary-food-frontend/static/js/517.5991ffa1.chunk.js",
     "static/js/755.0ea32e15.chunk.js": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js",
     "static/js/213.82d5f84b.chunk.js": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js",
@@ -15,7 +15,7 @@
     "static/js/692.0b43e31e.chunk.js": "/test-task-delivary-food-frontend/static/js/692.0b43e31e.chunk.js",
     "index.html": "/test-task-delivary-food-frontend/index.html",
     "main.0abed4b1.css.map": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css.map",
-    "main.9e68cedb.js.map": "/test-task-delivary-food-frontend/static/js/main.9e68cedb.js.map",
+    "main.cdc439e6.js.map": "/test-task-delivary-food-frontend/static/js/main.cdc439e6.js.map",
     "517.5991ffa1.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.5991ffa1.chunk.js.map",
     "755.0ea32e15.chunk.js.map": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js.map",
     "213.82d5f84b.chunk.js.map": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.0abed4b1.css",
-    "static/js/main.9e68cedb.js"
+    "static/js/main.cdc439e6.js"
   ]
 }
