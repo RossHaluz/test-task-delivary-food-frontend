@@ -21,8 +21,8 @@ const UserInfo = () => {
   };
 
   const initialValues = {
-    name: user.name,
-    email: user.email,
+    name: user.name || '',
+    email: user.email || '',
   };
 
   return (

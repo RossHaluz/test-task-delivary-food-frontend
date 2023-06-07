@@ -69,7 +69,7 @@ export const logout = createAsyncThunk(
 );
 
 export const editUser = createAsyncThunk(
-  'auth/aditUser',
+  'auth/editUser',
   async (updateUser, { rejectWithValue }) => {
     try {
       const { data } = await axios.patch('/auth/user-edit', updateUser);
