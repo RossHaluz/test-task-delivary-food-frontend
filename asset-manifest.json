@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css",
-    "main.js": "/test-task-delivary-food-frontend/static/js/main.cdc439e6.js",
-    "static/js/517.5991ffa1.chunk.js": "/test-task-delivary-food-frontend/static/js/517.5991ffa1.chunk.js",
+    "main.js": "/test-task-delivary-food-frontend/static/js/main.627c17d8.js",
+    "static/js/879.d5f7dde0.chunk.js": "/test-task-delivary-food-frontend/static/js/879.d5f7dde0.chunk.js",
+    "static/js/322.8bceb78c.chunk.js": "/test-task-delivary-food-frontend/static/js/322.8bceb78c.chunk.js",
     "static/js/755.0ea32e15.chunk.js": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js",
     "static/js/213.82d5f84b.chunk.js": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js",
     "static/js/476.4cc73c00.chunk.js": "/test-task-delivary-food-frontend/static/js/476.4cc73c00.chunk.js",
@@ -15,8 +16,9 @@
     "static/js/692.0b43e31e.chunk.js": "/test-task-delivary-food-frontend/static/js/692.0b43e31e.chunk.js",
     "index.html": "/test-task-delivary-food-frontend/index.html",
     "main.0abed4b1.css.map": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css.map",
-    "main.cdc439e6.js.map": "/test-task-delivary-food-frontend/static/js/main.cdc439e6.js.map",
-    "517.5991ffa1.chunk.js.map": "/test-task-delivary-food-frontend/static/js/517.5991ffa1.chunk.js.map",
+    "main.627c17d8.js.map": "/test-task-delivary-food-frontend/static/js/main.627c17d8.js.map",
+    "879.d5f7dde0.chunk.js.map": "/test-task-delivary-food-frontend/static/js/879.d5f7dde0.chunk.js.map",
+    "322.8bceb78c.chunk.js.map": "/test-task-delivary-food-frontend/static/js/322.8bceb78c.chunk.js.map",
     "755.0ea32e15.chunk.js.map": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js.map",
     "213.82d5f84b.chunk.js.map": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js.map",
     "476.4cc73c00.chunk.js.map": "/test-task-delivary-food-frontend/static/js/476.4cc73c00.chunk.js.map",
@@ -30,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.0abed4b1.css",
-    "static/js/main.cdc439e6.js"
+    "static/js/main.627c17d8.js"
   ]
 }
