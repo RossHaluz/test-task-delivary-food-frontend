@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FilterBtnWrapper, FilterBtn } from './Filter.styled';
 
-const Filter = ({ setCurrentCategory }) => {
+const Filter = ({ setCurrentCategory, current }) => {
   const [categories] = useState([
     {
       id: 1,
@@ -28,14 +28,19 @@ const Filter = ({ setCurrentCategory }) => {
   return (
     <FilterBtnWrapper>
       <h3>Shops</h3>
-      {categories.map(categorie => {
+      {categories.map(({ id, name }) => {
         return (
           <FilterBtn
-            key={categorie.id}
+            key={id}
             type="button"
-            onClick={() => onClickShop(categorie.name)}
+            style={{
+              backgroundColor: current === name ? '#2196f3' : 'white',
+              color: current === name ? 'white' : '#030303',
+              fontWeight: current === name ? '600' : '400',
+            }}
+            onClick={() => onClickShop(name)}
           >
-            {categorie.name}
+            {name}
           </FilterBtn>
         );
       })}

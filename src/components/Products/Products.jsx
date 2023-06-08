@@ -17,7 +17,7 @@ const Products = () => {
 
   return (
     <FoodListContainer>
-      <Filter setCurrentCategory={setCurrentCategory} />
+      <Filter setCurrentCategory={setCurrentCategory} current={current} />
       <FoodsList>
         {isLoadingPage ? (
           <Oval

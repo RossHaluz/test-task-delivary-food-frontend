@@ -1,13 +1,12 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const FilterBtn = styled.button`
   background: none;
-  border: none;
   padding: 20px;
   font-size: 16px;
   font-weight: 500;
-  color: white;
-  background-color: #2196f3;
+  color: #030303;
+  border: 1px solid #2196f3;
   cursor: pointer;
   border-radius: 20px;
 `;
