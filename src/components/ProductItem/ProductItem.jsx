@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { FoodItem, FoodItemDesc, FoodItemBtn } from './ProductItem.styled';
 import { addItemToCart } from 'redux/orders/slice';
 import { toast } from 'react-hot-toast';
+import { NavLink } from 'react-router-dom';
 
 const ProductItem = ({ title, img, desc, price, id, count }) => {
   const dispatch = useDispatch();
@@ -14,11 +15,13 @@ const ProductItem = ({ title, img, desc, price, id, count }) => {
   return (
     <>
       <FoodItem>
-        <img src={img} alt={title} width="426" height="294px" />
-        <div>
-          <h2>{title}</h2>
-          <FoodItemDesc>{desc}</FoodItemDesc>
-        </div>
+        <NavLink to={`/${id}`}>
+          <img src={img} alt={title} width="426" height="294px" />
+          <div>
+            <h2>{title}</h2>
+            <FoodItemDesc>{desc}</FoodItemDesc>
+          </div>
+        </NavLink>
         <p>{price} UAH</p>
         <FoodItemBtn type="button" onClick={handleAddItemToCart}>
           Buy

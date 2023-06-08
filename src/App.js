@@ -12,6 +12,7 @@ import {
 } from 'components/RestrictedRoute/RestrictedRoute';
 
 const ProductsPage = lazy(() => import('../src/pages/ProductsPage'));
+const ProductPage = lazy(() => import('../src/pages/ProductPage'));
 const CartPage = lazy(() => import('../src/pages/CartPage'));
 const SuccessOrderPage = lazy(() => import('../src/pages/SuccessOrderPage'));
 const RegisterPage = lazy(() => import('../src/pages/RegisterPage'));
@@ -30,6 +31,7 @@ function App() {
     <Routes>
       <Route path="/" element={<SharedLoyout />}>
         <Route index element={<ProductsPage />} />
+        <Route path="/:foodId" element={<ProductPage />} />
         <Route path="cart" element={<CartPage />} />
         <Route
           path="success-order"

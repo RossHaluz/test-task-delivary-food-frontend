@@ -19,9 +19,11 @@ const orderSlice = createSlice({
   },
   reducers: {
     addItemToCart(state, action) {
+      console.log(action);
       const findItem = state.orderItems.findIndex(
-        item => item.id === action.payload.id
+        item => item.id === action.payload.id || item.id === action.payload._id
       );
+      console.log(findItem);
       if (findItem >= 0) {
         state.orderItems[findItem].count += 1;
       } else {

@@ -14,3 +14,15 @@ export const getFoods = createAsyncThunk(
     }
   }
 );
+
+export const getFood = createAsyncThunk(
+  'api/food',
+  async (foodId, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.get(`/api/foods/${foodId}`);
+      return data;
+    } catch (error) {
+      rejectWithValue(error.message);
+    }
+  }
+);
