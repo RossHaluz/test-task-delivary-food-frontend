@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import { FilterBtnWrapper, FilterBtn } from './Filter.styled';
+import { useSearchParams } from 'react-router-dom';
+import { getFoodsCategory } from 'redux/foods/operetions';
+import { useDispatch } from 'react-redux';
 
-const Filter = ({ setCurrentCategory, current }) => {
+const Filter = ({ current }) => {
+  const [query, setQuery] = useSearchParams();
+  const dispatch = useDispatch();
+  const category = query.get('shop');
   const [categories] = useState([
     {
       id: 1,
@@ -22,7 +28,8 @@ const Filter = ({ setCurrentCategory, current }) => {
   ]);
 
   const onClickShop = value => {
-    setCurrentCategory(value);
+    setQuery({ shop: value });
+    dispatch(getFoodsCategory(category));
   };
 
   return (
@@ -34,9 +41,9 @@ const Filter = ({ setCurrentCategory, current }) => {
             key={id}
             type="button"
             style={{
-              backgroundColor: current === name ? '#2196f3' : 'white',
-              color: current === name ? 'white' : '#030303',
-              fontWeight: current === name ? '600' : '400',
+              backgroundColor: category === name ? '#2196f3' : 'white',
+              color: category === name ? 'white' : '#030303',
+              fontWeight: category === name ? '600' : '400',
             }}
             onClick={() => onClickShop(name)}
           >

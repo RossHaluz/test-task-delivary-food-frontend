@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getFoods, getFood } from './operetions';
+import { getFoods, getFood, getFoodsCategory } from './operetions';
 
 const foodsSlice = createSlice({
   name: 'food',
@@ -24,6 +24,10 @@ const foodsSlice = createSlice({
     [getFood.fulfilled](state, action) {
       state.currentFood = action.payload;
       state.isLoading = false;
+    },
+    [getFoodsCategory.fulfilled](state, action) {
+      console.log(action.payload);
+      state.foods = action.payload;
     },
   },
 });
