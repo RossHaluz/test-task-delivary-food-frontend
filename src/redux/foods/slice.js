@@ -11,18 +11,18 @@ const foodsSlice = createSlice({
     totalPage: 0,
     currentPage: 1,
     currentPageCategory: 1,
-    pageQtyCategory: 0
+    pageQtyCategory: 0,
   },
-  reducers:{
-    changeCurrentPage(state, action){
-      state.currentPage = action.payload
+  reducers: {
+    changeCurrentPage(state, action) {
+      state.currentPage = action.payload;
     },
-    changeCurrentPageCategory(state, action){
-      state.currentPageCategory = action.payload
+    changeCurrentPageCategory(state, action) {
+      state.currentPageCategory = action.payload;
     },
-    setShopName(state, action){
-      state.currentShop = action.payload
-    }
+    setShopName(state, action) {
+      state.currentShop = action.payload;
+    },
   },
   extraReducers: {
     [getFoods.pending](state, __) {
@@ -33,7 +33,7 @@ const foodsSlice = createSlice({
       state.foods = action.payload;
       state.totalPage = action.payload.meta.totalPage;
       state.currentPage = action.payload.meta.currentPage;
-      state.currentShop = ''
+      state.currentShop = '';
     },
     [getFood.pending](state, __) {
       state.isLoading = true;
@@ -43,15 +43,15 @@ const foodsSlice = createSlice({
       state.isLoading = false;
     },
     [getFoodsCategory.fulfilled](state, action) {
-      console.log(action.payload);
       state.foods = action.payload;
       state.currentPageCategory = action.payload.meta.currentPage;
-      state.pageQtyCategory = action.payload.meta.totalPage
+      state.pageQtyCategory = action.payload.meta.totalPage;
       state.currentPage = 1;
       state.totalPage = 0;
     },
   },
 });
 
-export const {changeCurrentPage, setShopName, changeCurrentPageCategory} = foodsSlice.actions
+export const { changeCurrentPage, setShopName, changeCurrentPageCategory } =
+  foodsSlice.actions;
 export const foodsReducer = foodsSlice.reducer;
