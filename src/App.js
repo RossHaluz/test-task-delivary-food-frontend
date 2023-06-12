@@ -3,13 +3,14 @@ import './App.css';
 import SharedLoyout from './components/SharedLotout';
 import { lazy, useEffect } from 'react';
 import { getFoods } from 'redux/foods/operetions';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { currentUser } from 'redux/auth/operetions';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import {
   RestrictedRoute,
   RestrictRouteSuccessOrder,
 } from 'components/RestrictedRoute/RestrictedRoute';
+import { selectCurrentPage} from 'redux/foods/selectors';
 
 const ProductsPage = lazy(() => import('../src/pages/ProductsPage'));
 const ProductPage = lazy(() => import('../src/pages/ProductPage'));
@@ -20,12 +21,13 @@ const LoginPage = lazy(() => import('../src/pages/LoginPage'));
 const UserPage = lazy(() => import('../src/pages/UserPage'));
 
 function App() {
+  const page = useSelector(selectCurrentPage)
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(currentUser());
-    dispatch(getFoods());
-  }, [dispatch]);
+    dispatch(getFoods({page}));
+  }, [dispatch, page]);
 
   return (
     <Routes>

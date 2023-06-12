@@ -3,6 +3,7 @@ import { FilterBtnWrapper, FilterBtn } from './Filter.styled';
 import { useSearchParams } from 'react-router-dom';
 import { getFoodsCategory } from 'redux/foods/operetions';
 import { useDispatch } from 'react-redux';
+import { setShopName } from 'redux/foods/slice';
 
 const Filter = ({ current }) => {
   const [query, setQuery] = useSearchParams();
@@ -30,6 +31,7 @@ const Filter = ({ current }) => {
   const onClickShop = value => {
     setQuery({ shop: value });
     dispatch(getFoodsCategory(category));
+    dispatch(setShopName(value))
   };
 
   return (
