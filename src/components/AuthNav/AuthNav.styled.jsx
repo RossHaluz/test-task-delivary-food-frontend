@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { FaShoppingCart } from 'react-icons/fa';
+import { MdFavorite } from 'react-icons/md';
 
 export const AuthContainer = styled.div`
   display: flex;
@@ -40,3 +41,19 @@ export const QuantityCart = styled.div`
   color: white;
   font-weight: 600;
 `;
+
+
+export const AuthNavigationWrapp = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`
+
+export const AuthNavFavoriteIcon = styled(MdFavorite)`
+  color: orange;
+  font-size: 27px;
+
+  &:hover{
+    transform: scale(1.5);
+  }
+`

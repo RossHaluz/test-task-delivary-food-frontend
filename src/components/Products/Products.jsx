@@ -22,7 +22,6 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Products = props => {
-  console.log(props);
   const items = useSelector(selectFoods).foods;
   const isLoadingPage = useSelector(isLoading);
   const page = useSelector(selectCurrentPage);
@@ -31,7 +30,6 @@ const Products = props => {
   const pageCategory = useSelector(selectCurrentPageCategory);
   const pageQtyCategory = useSelector(selectPageQtyCategory);
   const dispatch = useDispatch();
-  console.log(items);
 
   useEffect(() => {
     if (currentShop === '') {
@@ -61,7 +59,7 @@ const Products = props => {
               strokeWidthSecondary={2}
             />
           ) : (
-            items.map(({ title, img, desc, price, _id, count }) => {
+            items.map(({ title, img, desc, price, _id, count, favorite }) => {
               return (
                 <ProductItem
                   key={_id}
@@ -71,6 +69,7 @@ const Products = props => {
                   desc={desc}
                   price={price}
                   count={count}
+                  favorite={favorite}
                 />
               );
             })
@@ -84,7 +83,6 @@ const Products = props => {
             page={page}
             onChange={(_, num) => dispatch(changeCurrentPage(num))}
             renderItem={item => {
-              console.log(item.page);
               return (
                 <PaginationItem
                   component={Link}

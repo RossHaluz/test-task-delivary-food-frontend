@@ -19,6 +19,7 @@ const SuccessOrderPage = lazy(() => import('../src/pages/SuccessOrderPage'));
 const RegisterPage = lazy(() => import('../src/pages/RegisterPage'));
 const LoginPage = lazy(() => import('../src/pages/LoginPage'));
 const UserPage = lazy(() => import('../src/pages/UserPage'));
+const FavoritePage = lazy(() => import('../src/pages/FavoritePage'));
 
 function App() {
   const page = useSelector(selectCurrentPage)
@@ -62,6 +63,7 @@ function App() {
             <PrivateRoute component={<UserPage />} redirectTo="/login" />
           }
         />
+        <Route path='favorite' element={<PrivateRoute component={<FavoritePage/>} redirectTo="/login"/>}/>
       </Route>
     </Routes>
   );

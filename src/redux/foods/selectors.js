@@ -13,3 +13,5 @@ export const selectCurrentShop = state => state.food.currentShop;
 export const selectCurrentPageCategory = state => state.food.currentPageCategory;
 
 export const selectPageQtyCategory = state => state.food.pageQtyCategory;
+
+export const selectFavoriteFoods  = state => state.food.favoriteFoods;

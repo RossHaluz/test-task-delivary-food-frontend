@@ -1,10 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getFoods, getFood, getFoodsCategory } from './operetions';
+import {
+  getFoods,
+  getFood,
+  getFoodsCategory,
+  setFavoriteFood,
+  delateFavoriteItem,
+  getFavoriteFoods,
+} from './operetions';
 
 const foodsSlice = createSlice({
   name: 'food',
   initialState: {
     foods: [],
+    favoriteFoods: [],
     currentFood: null,
     currentShop: '',
     isLoading: false,
@@ -48,6 +56,21 @@ const foodsSlice = createSlice({
       state.pageQtyCategory = action.payload.meta.totalPage;
       state.currentPage = 1;
       state.totalPage = 0;
+    },
+    [setFavoriteFood.fulfilled](state, action) {
+      state.favoriteFoods = action.payload;
+    },
+    [delateFavoriteItem.fulfilled](state, action) {
+      const index = state?.favoriteFoods?.data?.foods.findIndex(
+        item => item._id === action.payload._id
+      );
+      if(index === -1){
+        return
+      }
+      state.favoriteFoods.data.foods.splice(index, 1)
+    },
+    [getFavoriteFoods.fulfilled](state, action) {
+      state.favoriteFoods = action.payload;
     },
   },
 });
