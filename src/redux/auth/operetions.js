@@ -80,3 +80,12 @@ export const editUser = createAsyncThunk(
     }
   }
 );
+
+export const updateAvatar = createAsyncThunk('auth/updateAvatar', async (avatar, {rejectWithValue}) => {
+  try {
+    const {data} = await axios.patch('/auth/update-avatar', avatar);
+    return data
+  } catch (error) {
+    rejectWithValue(error.message)
+  }
+})

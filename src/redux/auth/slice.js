@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { register, login, currentUser, logout, editUser } from './operetions';
+import { register, login, currentUser, logout, editUser, updateAvatar } from './operetions';
 
 const initialState = {
   user: { name: null, email: null },
+  avatar: null,
   token: null,
   isLoading: false,
   isLoging: false,
@@ -54,6 +55,13 @@ const authSlice = createSlice({
       state.user = action.payload;
       state.token = action.payload.token;
     },
+    [updateAvatar.fulfilled](state, action) {
+      const updatedFields = action.payload;
+      state.user = {
+        ...state.user,
+        avatar: updatedFields
+      }
+    }
   },
 });
 

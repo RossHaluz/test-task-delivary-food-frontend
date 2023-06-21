@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Form, Field } from 'formik';
+import { BiCamera } from 'react-icons/bi';
 
 export const UserInfoWrapperr = styled.div`
   display: flex;
@@ -42,3 +43,28 @@ export const UserInfoBtn = styled.button`
   border: none;
   border-radius: 15px;
 `;
+
+export const UserImgWrapper = styled.div`
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin: 0 auto;
+align-items: center;
+`
+
+
+export const UserInfoEditPhoto = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`
+export const UserInfoEditPhotoIcon = styled(BiCamera)`
+font-size: 24px;
+color: #1976d2;
+cursor: pointer;
+`
+export const  UserInfoEditPhotoText = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+`
