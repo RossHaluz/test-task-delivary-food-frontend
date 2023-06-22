@@ -26,7 +26,7 @@ const UserInfo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
   const [selectedFile, setSelectedFile] = useState(null);
-  const [isEditingPhoto, setIsEditingPhoto] = useState(false);
+  // const [isEditingPhoto, setIsEditingPhoto] = useState(false);
   const fileInputRef = useRef(null);
 
 
@@ -40,17 +40,20 @@ const UserInfo = () => {
   };
 
   const handleChange = e => {
-    setSelectedFile(e.target.files[0]);
-    setIsEditingPhoto(false);
-    const formData = new FormData();
-    formData.append('avatar', selectedFile);
-    dispatch(editUser(formData));
+    const file = e.target.files[0];
+    setSelectedFile(file);
   };
+
+  const handleUpload = () => {
+    const formData = new FormData();
+    formData.append('avatar', selectedFile, selectedFile.name);
+    dispatch(editUser(formData));
+  }
 
   console.log(avatarUrl);
 
   const handleEditPhoto = () => {
-    setIsEditingPhoto(true);
+    // setIsEditingPhoto(true);
     fileInputRef.current.click();
   };
 
@@ -59,12 +62,13 @@ const UserInfo = () => {
       <UserInfoTitle>Information about user</UserInfoTitle>
       <UserImgWrapper>
         <UserImgCover>
-        {selectedFile && isEditingPhoto ? (
+        {selectedFile  ? (
           <ImgAvatar src={URL.createObjectURL(selectedFile)} alt="Avatar" />
         ) : (
           <ImgAvatar src={`https://fooddelivery-y6s0.onrender.com/${avatarUrl}` || defaultAvatar} alt="Avatar" />
         )}
         </UserImgCover>
+        <button type='button' onClick={handleUpload}>Upload</button>
         <UserInfoEditPhoto>
           <UserInfoEditPhotoIcon onClick={handleEditPhoto} />
           <UserInfoEditPhotoText onClick={handleEditPhoto}>
