@@ -72,7 +72,7 @@ export const editUser = createAsyncThunk(
   'auth/editUser',
   async (updateUser, { rejectWithValue }) => {
     try {
-      const { data } = await axios.patch('/auth/user-edit', updateUser);
+      const { data } = await axios.put('/auth/user-edit', updateUser);
       setAuthHeaderToken(data.token);
       return data;
     } catch (error) {
@@ -80,12 +80,3 @@ export const editUser = createAsyncThunk(
     }
   }
 );
-
-export const updateAvatar = createAsyncThunk('auth/updateAvatar', async (avatar, {rejectWithValue}) => {
-  try {
-    const {data} = await axios.patch('/auth/update-avatar', avatar);
-    return data
-  } catch (error) {
-    rejectWithValue(error.message)
-  }
-})

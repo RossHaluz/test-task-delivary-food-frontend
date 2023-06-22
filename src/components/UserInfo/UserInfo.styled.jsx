@@ -68,3 +68,20 @@ export const  UserInfoEditPhotoText = styled.p`
   font-weight: 500;
   cursor: pointer;
 `
+
+export const UserImgCover = styled.div`
+ display: flex;
+ justify-content: center;
+ border-radius: 50%;
+ overflow: hidden;
+ margin-top: 15px;
+`
+
+export const ImgAvatar = styled.img`
+    display: block;
+    width: 182px;
+    height: 182px;
+    border-radius: 40px;
+    background-color: rgb(235, 235, 235);
+    object-fit: cover;
+`
