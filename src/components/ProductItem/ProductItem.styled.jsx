@@ -1,4 +1,35 @@
 import styled from '@emotion/styled';
+import { MdFavorite, MdFavoriteBorder } from 'react-icons/md';
+
+export const FoodItemWraperr = styled.div`
+  position: relative;
+`
+
+export const FavoriteBtnIcon = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+`
+
+export const FavoriteIcon = styled(MdFavorite)`
+  color: orange;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+`
+
+export const SelectFavoriteIcon = styled(MdFavoriteBorder)`
+  color: orange;
+
+&:hover {
+  transform: scale(1.5);
+}
+`
 
 export const FoodItem = styled.li`
   flex-basis: calc((100% - 30px * (1 - 1)) / 1);
