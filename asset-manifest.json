@@ -1,39 +1,41 @@
 {
   "files": {
     "main.css": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css",
-    "main.js": "/test-task-delivary-food-frontend/static/js/main.d7b748ee.js",
+    "main.js": "/test-task-delivary-food-frontend/static/js/main.f6f46b1f.js",
     "static/js/879.000d1077.chunk.js": "/test-task-delivary-food-frontend/static/js/879.000d1077.chunk.js",
     "static/js/322.449cb32c.chunk.js": "/test-task-delivary-food-frontend/static/js/322.449cb32c.chunk.js",
     "static/js/755.0ea32e15.chunk.js": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js",
     "static/js/213.82d5f84b.chunk.js": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js",
     "static/js/476.5c0a7e56.chunk.js": "/test-task-delivary-food-frontend/static/js/476.5c0a7e56.chunk.js",
     "static/js/96.d0827c4b.chunk.js": "/test-task-delivary-food-frontend/static/js/96.d0827c4b.chunk.js",
-    "static/js/248.833556d2.chunk.js": "/test-task-delivary-food-frontend/static/js/248.833556d2.chunk.js",
+    "static/js/248.08c27fd2.chunk.js": "/test-task-delivary-food-frontend/static/js/248.08c27fd2.chunk.js",
     "static/js/702.75bbbb4b.chunk.js": "/test-task-delivary-food-frontend/static/js/702.75bbbb4b.chunk.js",
     "static/js/705.6e6308ae.chunk.js": "/test-task-delivary-food-frontend/static/js/705.6e6308ae.chunk.js",
     "static/js/727.27acabb0.chunk.js": "/test-task-delivary-food-frontend/static/js/727.27acabb0.chunk.js",
     "static/js/692.ddb546fe.chunk.js": "/test-task-delivary-food-frontend/static/js/692.ddb546fe.chunk.js",
     "static/js/851.00597833.chunk.js": "/test-task-delivary-food-frontend/static/js/851.00597833.chunk.js",
     "static/js/996.0b2a4aea.chunk.js": "/test-task-delivary-food-frontend/static/js/996.0b2a4aea.chunk.js",
+    "static/js/731.f2eeedb1.chunk.js": "/test-task-delivary-food-frontend/static/js/731.f2eeedb1.chunk.js",
     "index.html": "/test-task-delivary-food-frontend/index.html",
     "main.0abed4b1.css.map": "/test-task-delivary-food-frontend/static/css/main.0abed4b1.css.map",
-    "main.d7b748ee.js.map": "/test-task-delivary-food-frontend/static/js/main.d7b748ee.js.map",
+    "main.f6f46b1f.js.map": "/test-task-delivary-food-frontend/static/js/main.f6f46b1f.js.map",
     "879.000d1077.chunk.js.map": "/test-task-delivary-food-frontend/static/js/879.000d1077.chunk.js.map",
     "322.449cb32c.chunk.js.map": "/test-task-delivary-food-frontend/static/js/322.449cb32c.chunk.js.map",
     "755.0ea32e15.chunk.js.map": "/test-task-delivary-food-frontend/static/js/755.0ea32e15.chunk.js.map",
     "213.82d5f84b.chunk.js.map": "/test-task-delivary-food-frontend/static/js/213.82d5f84b.chunk.js.map",
     "476.5c0a7e56.chunk.js.map": "/test-task-delivary-food-frontend/static/js/476.5c0a7e56.chunk.js.map",
     "96.d0827c4b.chunk.js.map": "/test-task-delivary-food-frontend/static/js/96.d0827c4b.chunk.js.map",
-    "248.833556d2.chunk.js.map": "/test-task-delivary-food-frontend/static/js/248.833556d2.chunk.js.map",
+    "248.08c27fd2.chunk.js.map": "/test-task-delivary-food-frontend/static/js/248.08c27fd2.chunk.js.map",
     "702.75bbbb4b.chunk.js.map": "/test-task-delivary-food-frontend/static/js/702.75bbbb4b.chunk.js.map",
     "705.6e6308ae.chunk.js.map": "/test-task-delivary-food-frontend/static/js/705.6e6308ae.chunk.js.map",
     "727.27acabb0.chunk.js.map": "/test-task-delivary-food-frontend/static/js/727.27acabb0.chunk.js.map",
     "692.ddb546fe.chunk.js.map": "/test-task-delivary-food-frontend/static/js/692.ddb546fe.chunk.js.map",
     "851.00597833.chunk.js.map": "/test-task-delivary-food-frontend/static/js/851.00597833.chunk.js.map",
-    "996.0b2a4aea.chunk.js.map": "/test-task-delivary-food-frontend/static/js/996.0b2a4aea.chunk.js.map"
+    "996.0b2a4aea.chunk.js.map": "/test-task-delivary-food-frontend/static/js/996.0b2a4aea.chunk.js.map",
+    "731.f2eeedb1.chunk.js.map": "/test-task-delivary-food-frontend/static/js/731.f2eeedb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0abed4b1.css",
-    "static/js/main.d7b748ee.js"
+    "static/js/main.f6f46b1f.js"
   ]
 }
