@@ -85,3 +85,20 @@ export const ImgAvatar = styled.img`
     background-color: rgb(235, 235, 235);
     object-fit: cover;
 `
+
+export const  ConfirmOrCansleWrapperr = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`
+
+export const CrossWrapp = styled.div`
+  display: flex;
+  color: #f85149;
+  cursor: pointer;
+`
+
+export const ConfirmWrapp = styled.div`
+  color: #1f883d;
+  cursor: pointer;
+`
